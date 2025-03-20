@@ -1,4 +1,13 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Manga Search App
+
+A React Native application for searching and viewing manga information using the Jikan API (MyAnimeList unofficial API).
+
+## Features
+
+- Search for manga by title
+- View search results with images, titles, and brief synopses
+- Tap on a manga to view detailed information
+- View full manga details including synopsis, genres, authors, and publication information
 
 # Getting Started
 
@@ -85,6 +94,24 @@ You've successfully run and modified your React Native App. :partying_face:
 # Troubleshooting
 
 If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+
+# Project Structure
+
+```
+src/
+├── api/           # API services
+├── components/    # Reusable components
+├── hooks/         # Custom hooks
+└── screens/       # App screens
+```
+
+## API
+
+This app uses the Jikan API v4, which is an unofficial MyAnimeList API. The API is free to use and doesn't require authentication.
+
+Endpoints used:
+- Search manga: `https://api.jikan.moe/v4/manga?q={query}`
+- Get manga details: `https://api.jikan.moe/v4/manga/{id}`
 
 # Learn More
 

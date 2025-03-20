@@ -113,6 +113,35 @@ Endpoints used:
 - Search manga: `https://api.jikan.moe/v4/manga?q={query}`
 - Get manga details: `https://api.jikan.moe/v4/manga/{id}`
 
+# Installing the APK
+
+## Android
+
+You can install the app on Android devices by following these steps:
+
+1. Download the APK file from the `android/app/build/outputs/apk/release/app-release.apk` path
+2. Transfer the APK to your Android device via USB, email, or cloud storage
+3. On your Android device, navigate to the APK file location and tap on it
+4. If prompted, enable installation from unknown sources in your device settings
+5. Follow the on-screen instructions to complete the installation
+
+### Building the APK yourself
+
+If you want to build the APK yourself, follow these steps:
+
+```sh
+# Navigate to the Android directory
+cd android
+
+# Clean the project
+./gradlew clean
+
+# Build the release APK
+./gradlew assembleRelease
+```
+
+The APK will be generated at `android/app/build/outputs/apk/release/app-release.apk`
+
 # Learn More
 
 To learn more about React Native, take a look at the following resources:
